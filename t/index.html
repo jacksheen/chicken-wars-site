@@ -169,9 +169,11 @@ document.getElementById('input-line').addEventListener('keypress', function (e) 
   function getCommandPrompt() {
     commandArrays = document.getElementById("input").value.split(" ");
 
+    console.log(commandArrays);
+
     if (commandArrays[2] == "task") {
       if (commandArrays[1] == "run") {
-        document.getElementById("output").innerHTML += "Running task.."
+        document.getElementById("output").innerHTML += "<br/>Running task..";
       }
     }
   }
