@@ -18,7 +18,7 @@ $(function() {
     function getCommandPrompt() {
       commandArrays = document.getElementById("input").value.split(" ");
   
-      console.log(commandArrays);
+      var color_imported, gus_imported;
     
       if (commandArrays[1] == "task") {
         if (commandArrays[0] == "run") {
@@ -31,6 +31,13 @@ $(function() {
             } else {
               document.getElementById("output").innerHTML += "<br/><error>Invalid task</error>";
             }
+        }
+      } else if (commandArrays[1] == "import") {
+        if (commandArrays[2] == null) {
+          document.getElementById("output").innerHTML += "<br/><error>Module is not specified</error>";
+        } else if (commandArrays[2] == "color") {
+          document.getElementById("output").innerHTML += "<br/>Importing Color...";
+          color_imported = true;
         }
       } else {
         document.getElementById("output").innerHTML += "<br/><error>Invalid command</error>";
