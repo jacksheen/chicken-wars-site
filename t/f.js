@@ -25,9 +25,9 @@ $(function() {
             if (commandArrays[2] == null) {
               document.getElementById("output").innerHTML += "<br/><error>Cannot run if no task selected</error>";
             } else if (commandArrays[2] == "main.new.chicken") {
-              document.getElementById("output").innerHTML += "<br/>Running task..";
+              document.getElementById("output").innerHTML += "<br/>Running task...";
             } else if (commandArrays[2] == "main.merge.chicken") {
-              document.getElementById("output").innerHTML += "<br/>Running task..";
+              document.getElementById("output").innerHTML += "<br/>Running task...";
             } else {
               document.getElementById("output").innerHTML += "<br/><error>Invalid task</error>";
             }
@@ -36,8 +36,12 @@ $(function() {
         if (commandArrays[1] == null) {
           document.getElementById("output").innerHTML += "<br/><error>Module is not specified</error>";
         } else if (commandArrays[1] == "color") {
-          document.getElementById("output").innerHTML += "<br/>Importing Color...";
-          color_imported = true;
+          if (color_imported != true) {
+            document.getElementById("output").innerHTML += "<br/>Importing Color...";
+            color_imported = true;
+          } else {
+            document.getElementById("output").innerHTML += "<br/><error>Already imported Color</error>";
+          }
         }
       } else {
         document.getElementById("output").innerHTML += "<br/><error>Invalid command</error>";
