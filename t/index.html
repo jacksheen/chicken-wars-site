@@ -171,8 +171,8 @@ document.getElementById('input-line').addEventListener('keypress', function (e) 
 
     console.log(commandArrays);
 
-    if (commandArrays[2] == "task") {
-      if (commandArrays[1] == "run") {
+    if (commandArrays[1] == "task") {
+      if (commandArrays[0] == "run") {
         document.getElementById("output").innerHTML += "<br/>Running task..";
       }
     }
