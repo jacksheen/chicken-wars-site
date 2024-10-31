@@ -17,18 +17,10 @@
 var shouldspin;
 var i = 0;
 
-while (true) {
     document.getElementById('gameplay_1').addEventListener('mouseover', function(e) {
-        shouldspin = true;
-    })
-    document.getElementById('gameplay_1').addEventListener('mouseleave', function(e) {
-        shouldspin = false;
+        document.getElementById("gameplay_1").style.transform = `rotateY(${i})`;
+        i++;
     })
 
-    if (shouldspin == true) {
-        document.getElementById("gameplay_1").style.transform = `rotateY(${i})`;
-        i++
-    }
-}
 </script>
 </html>
