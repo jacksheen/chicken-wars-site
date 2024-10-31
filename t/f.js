@@ -63,8 +63,10 @@ $(function() {
           document.body.style.backgroundColor = "orange";
         } else if (commandArrays[1] == 14) {
           document.body.style.backgroundColor = "cyan";
-        } else if (commandArrays[1] == 16) {
+        } else if (commandArrays[1] == 15) {
           document.body.style.backgroundColor = "darkred";
+        } else if (commandArrays[1] == 9) {
+          document.body.style.backgroundColor = "salmon";
         } else {
           document.getElementById("output").innerHTML += "<br/><error>Invalid Color</error>";
         }
