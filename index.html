@@ -10,10 +10,25 @@
     <center>
         <h1 class="big-text">CHICKEN WARS</h1>
         <p><b>CHICKEN WARS</b> IS AN RPG WHERE YOU COLLECT RESOURCES, CHICKENS, POTIONS, AND MORE.</p>
-        <img id="gameplay_1" width="70" src="src/img/gameplay_1.gif">
+        <img id="gameplay_1" width="180" src="src/img/gameplay_1.gif">
     </center>
 </body>
 <script>
+var shouldspin;
+var i = 0;
 
+while (true) {
+    document.getElementById('gameplay_1').addEventListener('mouseover', function(e) {
+        shouldspin = true;
+    })
+    document.getElementById('gameplay_1').addEventListener('mouseleave', function(e) {
+        shouldspin = false;
+    })
+
+    if (shouldspin == true) {
+        document.getElementById("gameplay_1").style.transform = `rotateY(${i})`;
+        i++
+    }
+}
 </script>
 </html>
