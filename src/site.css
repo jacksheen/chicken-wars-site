@@ -1,11 +1,11 @@
 @font-face {
     font-family: nes;
-    src: url("NESFont.ttf");
+    src: url("fonts/NESFont.ttf");
 }
 
 body {
     font-family: nes;
-    background-color: 6888fc;
+    background-color: #0078f8;
     color: #fcfcfc;
 }
 
