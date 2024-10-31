@@ -53,6 +53,18 @@ $(function() {
           document.body.style.backgroundColor = "purple";
         } else if (commandArrays[1] == 9) {
           document.body.style.backgroundColor = "white";
+        } else if (commandArrays[1] == 10) {
+          document.body.style.backgroundColor = "gray";
+        } else if (commandArrays[1] == 11) {
+          document.body.style.backgroundColor = "pink";
+        } else if (commandArrays[1] == 12) {
+          document.body.style.backgroundColor = "gold";
+        } else if (commandArrays[1] == 13) {
+          document.body.style.backgroundColor = "orange";
+        } else if (commandArrays[1] == 14) {
+          document.body.style.backgroundColor = "cyan";
+        } else if (commandArrays[1] == 16) {
+          document.body.style.backgroundColor = "darkred";
         } else {
           document.getElementById("output").innerHTML += "<br/><error>Invalid Color</error>";
         }
