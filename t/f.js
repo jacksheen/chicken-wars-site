@@ -26,8 +26,10 @@ $(function() {
               document.getElementById("output").innerHTML += "<br/><error>Cannot run if no task selected</error>";
             } else if (commandArrays[2] == "main.new.chicken") {
               document.getElementById("output").innerHTML += "<br/>Running task..";
-            } else if (commandArrays[2] == "main.exit") {
-              window.close();
+            } else if (commandArrays[2] == "main.merge.chicken") {
+              document.getElementById("output").innerHTML += "<br/>Running task..";
+            } else {
+              document.getElementById("output").innerHTML += "<br/><error>Invalid task</error>";
             }
         }
       } else {
