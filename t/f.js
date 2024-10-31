@@ -33,7 +33,7 @@ $(function() {
   
       if (commandArrays[1] == "task") {
         if (commandArrays[0] == "run") {
-            if (commandArrays[3] == null) {
+            if (commandArrays[2] == null) {
               document.getElementById("output").innerHTML += "<br/><error>Cannot run if no task selected</error>";
             } else {
               document.getElementById("output").innerHTML += "<br/>Running task..";
