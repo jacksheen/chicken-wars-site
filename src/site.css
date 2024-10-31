@@ -1,10 +1,14 @@
 @font-face {
     font-family: nes;
-    src: url("src/NESFont.tff");
+    src: url("NESFont.tff");
 }
 
 body {
     font-family: nes;
     background-color: cornflowerblue;
     color: white;
+}
+
+.big-text {
+    font-size: 120px;
 }
