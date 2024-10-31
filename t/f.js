@@ -30,7 +30,7 @@ $(function() {
       commandArrays = document.getElementById("input").value.split(" ");
   
       console.log(commandArrays);
-  
+    
       if (commandArrays[1] == "task") {
         if (commandArrays[0] == "run") {
             if (commandArrays[2] == null) {
@@ -39,5 +39,7 @@ $(function() {
               document.getElementById("output").innerHTML += "<br/>Running task..";
             }
         }
+      } else {
+        document.getElementById("output").innerHTML += "<br/><error>Invalid command</error>";
       }
     }
