@@ -5,10 +5,10 @@
 
 body {
     font-family: nes;
-    background-color: cornflowerblue;
-    color: white;
+    background-color: 6888fc;
+    color: #fcfcfc;
 }
 
 .big-text {
-    font-size: 120px;
+    font-size: 100px;
 }
