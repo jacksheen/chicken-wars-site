@@ -17,8 +17,6 @@ $(function() {
   
     function getCommandPrompt() {
       commandArrays = document.getElementById("input").value.split(" ");
-  
-      var color_imported, gus_imported;
     
       if (commandArrays[1] == "task") {
         if (commandArrays[0] == "run") {
@@ -32,16 +30,17 @@ $(function() {
               document.getElementById("output").innerHTML += "<br/><error>Invalid task</error>";
             }
         }
-      } else if (commandArrays[0] == "import") {
+      } else if (commandArrays[0] == "color") {
         if (commandArrays[1] == null) {
-          document.getElementById("output").innerHTML += "<br/><error>Module is not specified</error>";
-        } else if (commandArrays[1] == "color") {
-          if (color_imported != true) {
-            document.getElementById("output").innerHTML += "<br/>Importing Color...";
-            color_imported = true;
-          } else {
-            document.getElementById("output").innerHTML += "<br/><error>Already imported Color</error>";
-          }
+          document.getElementById("output").innerHTML += "<br/><error>Color is not specified</error>";
+        } else if (commandArrays[1] == 0) {
+          document.body.style.backgroundColor = "black";
+        } else if (commandArrays[1] == 1) {
+          document.body.style.backgroundColor = "blue";
+        } else if (commandArrays[1] == 2) {
+          document.body.style.backgroundColor = "red";
+        } else {
+          document.getElementById("output").innerHTML += "<br/><error>Invalid Color</error>";
         }
       } else {
         document.getElementById("output").innerHTML += "<br/><error>Invalid command</error>";
