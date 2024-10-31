@@ -117,7 +117,7 @@ body {
     <div id="container">
       <output></output>
       <div id="input-line" class="input-line">
-        <div class="prompt"></div><div><input spellcheck="false" class="cmdline" autofocus /></div>
+        <div class="prompt"></div><div><input id="input" spellcheck="false" class="cmdline" autofocus /></div>
       </div>
     </div>
     
@@ -162,8 +162,12 @@ body {
 
 document.getElementById('input-line').addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-      console.log("Enter key pressed!");
+      // getCommandPrompt()
     }
 });
+
+  function getCommandPrompt() {
+    commandArrays = document.getElementById("input").innerText
+  }
   </script>
 </html>
