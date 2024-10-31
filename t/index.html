@@ -159,5 +159,11 @@ body {
   }, 1000);
   
 });
+
+document.getElementById('input-line').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      console.log("Enter key pressed!");
+    }
+});
   </script>
 </html>
