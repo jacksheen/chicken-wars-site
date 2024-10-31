@@ -115,10 +115,10 @@ body {
   </head>
   <body>
     <div id="container">
-      <output></output>
       <div id="input-line" class="input-line">
         <div class="prompt"></div><div><input id="input" spellcheck="false" class="cmdline" autofocus /></div>
       </div>
+      <output id="output"></output>
     </div>
     
     <!--<script src="http://www.codehelper.io/api/ips/?js"></script>-->
@@ -162,12 +162,18 @@ body {
 
 document.getElementById('input-line').addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-      // getCommandPrompt()
+      getCommandPrompt()
     }
 });
 
   function getCommandPrompt() {
-    commandArrays = document.getElementById("input").innerText
+    commandArrays = document.getElementById("input").value.split(" ");
+
+    if (commandArrays[2] == "task") {
+      if (commandArrays[1] == "run") {
+        document.getElementById("output").innerHTML += "Running task.."
+      }
+    }
   }
   </script>
 </html>
