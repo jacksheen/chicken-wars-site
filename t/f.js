@@ -32,10 +32,10 @@ $(function() {
               document.getElementById("output").innerHTML += "<br/><error>Invalid task</error>";
             }
         }
-      } else if (commandArrays[1] == "import") {
-        if (commandArrays[2] == null) {
+      } else if (commandArrays[0] == "import") {
+        if (commandArrays[1] == null) {
           document.getElementById("output").innerHTML += "<br/><error>Module is not specified</error>";
-        } else if (commandArrays[2] == "color") {
+        } else if (commandArrays[1] == "color") {
           document.getElementById("output").innerHTML += "<br/>Importing Color...";
           color_imported = true;
         }
