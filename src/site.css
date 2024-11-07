@@ -6,6 +6,7 @@
 body {
     font-family: pixelop;
     background-image: url("img/background_brick.png");
+    background-size: 100px 100px;
     background-color: #0078f8;
     color: #fcfcfc;
 }
