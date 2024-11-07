@@ -1,10 +1,11 @@
 @font-face {
-    font-family: nes;
-    src: url("fonts/NESFont.ttf");
+    font-family: pixelop;
+    src: url("fonts/PixelOperatorMono8-Bold.ttf");
 }
 
 body {
-    font-family: nes;
+    font-family: pixelop;
+    background-image: url("img/background_brick.png");
     background-color: #0078f8;
     color: #fcfcfc;
 }
