@@ -31,13 +31,17 @@ a:hover {
     animation: rotate 1s infinite;
  }
 
-button.orange {
+ button.orange {
     border: none;
     background-color: orange;
     color: white;
-    font-family: serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
     border-radius: 5px;
+}
+
+button.orange::hover {
+    background-color: rgb(199, 129, 0);
 }
  
  @keyframes rotate {
