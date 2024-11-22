@@ -1,6 +1,6 @@
 @font-face {
-    font-family: pixelop;
-    src: url("crypt-of-next-week.ttf");
+    font-family: conw;
+    src: url("fonts/crypt-of-next-week.ttf");
 }
 
 body {
@@ -24,7 +24,7 @@ a:hover {
 
 .big-text {
     font-size: 60px;
-    font-family: pixelop;
+    font-family: conw;
 }
 
 .rotating {
